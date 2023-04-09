@@ -5,7 +5,7 @@ import pickle as pkl
 
 app = Flask(__name__)
 CORS(app)
-app.config['PYTHON_VERSION'] = 3.11
+
 
 model = pkl.load(open('iris.pkl', 'rb'))
 
